@@ -1,7 +1,7 @@
 {
   "name": "@tropicalraisel/semver-regexp",
   "version": "1.0.0",
-  "description": "Semantic Version 2.0.0 regex library that includes proper security patches. ",
+  "description": "Semantic Version 2.0.0 regex library that includes proper security patches.",
   "keywords": [
     "semver",
     "version",
@@ -46,14 +46,18 @@
     "fix": "gts fix",
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",
-    "posttest": "npm.cmd run lint"
+    "posttest": "npm.cmd run lint",
+    "test": "pnpm lint && pnpm compile && jest"
   },
   "devDependencies": {
     "@skypack/package-check": "^0.2.2",
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.9.6",
     "gts": "^3.1.0",
+    "jest": "^27.2.1",
     "npm-check-updates": "^11.8.5",
     "sort-package-json": "^1.51.0",
+    "ts-jest": "^27.0.5",
     "typescript": "^4.4.3"
   }
 }
