@@ -23,7 +23,7 @@ Another small issue is that they allow [invalid semantic version strings](https:
 
 ## Usage
 
-There are two functions, one which strictly matches a semantic version, and another default function that permits version strings starting with `~`, `^`, or `v`.
+There are two functions, one default function that permits semantic version strings starting with `~`, `^`, or `v`, and another which strictly matches a semantic version.
 
 ```javascript
 import valid, { isValidSemanticVersion } from '@tropicalraisel/semver-regexp'
