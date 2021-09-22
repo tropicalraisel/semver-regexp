@@ -42,7 +42,7 @@
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc",
+    "compile": "pnpm clean && tsc",
     "fix": "gts fix",
     "prepare": "pnpm compile",
     "pretest": "pnpm compile",
