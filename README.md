@@ -1,6 +1,17 @@
-# semver-regexp
-
-[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
+<div align="center">
+  <img alt="Logo" src="./.github/images/logo.png" width="300">
+  <h1>semver-regexp</h1>
+  <p>Semantic Version 2.0.0 library powered by Regex.</p>
+  <hr>
+  <p>
+    <a href="https://www.npmjs.com/package/@tropicalraisel/semver-regexp">
+      <img alt="NPM Version" src="https://img.shields.io/npm/v/@tropicalraisel/semver-regexp?logo=npm&label=npm&color=CB3837">
+    </a>
+    <a href="https://github.com/google/gts">
+      <img alt="NPM Version" src="https://img.shields.io/badge/code%20style-google-blueviolet.svg">
+    </a>
+  </p>
+</div>
 
 ## Description
 
