@@ -1,4 +1,4 @@
-import semver from '../src';
+import isValidVersion from '../src';
 
 // all version tests from https://regex101.com/r/vkijKf/1/
 
@@ -39,14 +39,14 @@ describe('semantically correct versions', () => {
 
   for (const version of valid_versions) {
     it(version, () => {
-      expect(semver.test(version)).toBe(true);
+      expect(isValidVersion(version)).toBe(true);
     });
   }
 });
 
 describe('semantically incorrect versions', () => {
   it('empty string', () => {
-    expect(semver.test('')).toBe(false);
+    expect(isValidVersion('')).toBe(false);
   });
 
   const invalid_versions = [
@@ -94,7 +94,7 @@ describe('semantically incorrect versions', () => {
 
   for (const version of invalid_versions) {
     it(version, () => {
-      expect(semver.test(version)).toBe(false);
+      expect(isValidVersion(version)).toBe(false);
     });
   }
 });
