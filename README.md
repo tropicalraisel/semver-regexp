@@ -8,12 +8,15 @@ This package aims to fix issues with [semver](https://www.npmjs.com/package/semv
 Primarily, neither pass [all tests provided on the semver website](https://regex101.com/r/vkijKf/1/).
 Another small issue is that they allow [invalid semantic version strings](https://semver.org/#is-v123-a-semantic-version).
 
+There are two functions, one which strictly matches a semantic version, and another default function that permits version strings starting with `~`, `^`, or `v`.
+
 ## Usage
 
 ```javascript
-import isValidVersion from '@tropicalraisel/semver-regexp'
+import valid, { isValidSemanticVersion } from '@tropicalraisel/semver-regexp'
 
-const version = '4.2.0'
+const version = 'v4.2.0'
 
-console.log(isValidVersion(version))
+console.log(valid(version))
+console.log(isValidSemanticVersion(version))
 ```
