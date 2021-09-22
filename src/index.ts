@@ -5,7 +5,6 @@ All '\d' occurrences from the original have been replaced with '[0-9]'.
 This version actually performs faster than the original.
 */
 
-// https://regex101.com/r/QcBp0R/1
 const regex =
   /^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/gm;
 
