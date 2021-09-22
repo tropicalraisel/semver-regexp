@@ -10,8 +10,8 @@ describe('semver-regex benchmarks', () => {
   });
 
   it('ReDoS vulnerability', () => {
-    const start = Date.now();
     const fixture = `0.0.0-0${'.-------'.repeat(50000)}@`;
+    const start = Date.now();
     valid(fixture);
     const difference = Date.now() - start;
     expect(difference).toBeLessThan(10);
