@@ -47,12 +47,14 @@
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",
     "posttest": "npm.cmd run lint",
-    "test": "pnpm lint && pnpm compile && jest"
+    "test": "pnpm lint && pnpm compile && jest",
+    "release": "bumpp --commit --push --tag"
   },
   "devDependencies": {
     "@skypack/package-check": "^0.2.2",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.9.6",
+    "bumpp": "^7.1.1",
     "gts": "^3.1.0",
     "jest": "^27.2.1",
     "npm-check-updates": "^11.8.5",
