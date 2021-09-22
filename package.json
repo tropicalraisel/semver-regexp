@@ -1,7 +1,7 @@
 {
   "name": "@tropicalraisel/semver-regexp",
   "version": "1.1.0",
-  "description": "Semantic Version 2.0.0 library powered by regex.",
+  "description": "Semantic Version 2.0.0 library powered by Regex.",
   "keywords": [
     "semver",
     "version",
