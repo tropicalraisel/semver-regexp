@@ -7,8 +7,6 @@ on:
 
   # Trigger if there's a tagged (e.g. tag v1.0.0) commit pushed to master:
   push:
-    branches:
-      - master
     tags:
       - v*
 
