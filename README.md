@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="./.github/images/logo.png" width="300">
+  <img alt="Logo" src="https://raw.githubusercontent.com/tropicalraisel/semver-regexp/master/.github/images/logo.png" width="300">
   <h1>semver-regexp</h1>
   <p>Semantic Version 2.0.0 library powered by Regex.</p>
   <hr>
