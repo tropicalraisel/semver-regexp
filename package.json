@@ -44,9 +44,9 @@
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "npm.cmd run compile",
-    "pretest": "npm.cmd run compile",
-    "posttest": "npm.cmd run lint",
+    "prepare": "pnpm compile",
+    "pretest": "pnpm compile",
+    "posttest": "pnpm lint",
     "test": "pnpm lint && pnpm compile && jest",
     "release": "bumpp --commit --push --tag"
   },
