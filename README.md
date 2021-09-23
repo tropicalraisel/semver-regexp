@@ -7,10 +7,13 @@
   <hr>
   <p>
     <a href="https://www.npmjs.com/package/@tropicalraisel/semver-regexp">
-      <img alt="NPM Version" src="https://img.shields.io/npm/v/@tropicalraisel/semver-regexp?logo=npm&label=npm&color=CB3837">
+      <img alt="NPM Badge" src="https://img.shields.io/npm/v/@tropicalraisel/semver-regexp?style=flat&logo=npm&label=npm&color=CB3837">
     </a>
     <a href="https://github.com/google/gts">
-      <img alt="NPM Version" src="https://img.shields.io/badge/code%20style-google-blueviolet.svg">
+      <img alt="Google Badge" src="https://img.shields.io/static/v1?style=flat&logo=google&label=google&message=code%20style&color=4285F4">
+    </a>
+    <a href="https://npm.runkit.com/@tropicalraisel/semver-regexp">
+      <img alt="RunKit Badge" src="https://img.shields.io/static/v1?style=flat&logo=runkit&label=runkit&message=demo&color=491757">
     </a>
   </p>
 </div>
@@ -25,6 +28,8 @@ Another small issue is that they allow [invalid semantic version strings](https:
 
 There are two functions, one default function that permits semantic version strings starting with `~`, `^`, or `v`, and another which strictly matches a semantic version.
 
+### ESM
+
 ```javascript
 import valid, { isValidSemanticVersion } from '@tropicalraisel/semver-regexp'
 
@@ -32,4 +37,15 @@ const version = 'v4.2.0'
 
 console.log(valid(version))
 console.log(isValidSemanticVersion(version))
+```
+
+### CommonJS
+
+```javascript
+const semver = require('@tropicalraisel/semver-regexp')
+
+const version = 'v4.2.0'
+
+console.log(semver.default(version))
+console.log(semver.isValidSemanticVersion(version))
 ```
