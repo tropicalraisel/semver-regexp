@@ -3,7 +3,7 @@
   <h1>semver-regexp</h1>
   <p>Semantic Version 2.0.0 library powered by Regex.</p>
   <hr>
-  <a href="https://regex101.com/r/QcBp0R/1"><code>regex101 ex.</code></a>
+  <p>Live examples are on RunKit & <a href="https://regex101.com/r/QcBp0R/1">Regex101</a>!</p>
   <hr>
   <p>
     <a href="https://www.npmjs.com/package/@tropicalraisel/semver-regexp">
@@ -14,6 +14,9 @@
     </a>
     <a href="https://npm.runkit.com/@tropicalraisel/semver-regexp">
       <img alt="RunKit Badge" src="https://img.shields.io/static/v1?style=flat&logo=runkit&label=runkit&message=demo&color=491757">
+    </a>
+    <a href="https://runkit.com/tropicalraisel/semver-regexp">
+      <img alt="RunKit Badge" src="https://img.shields.io/static/v1?style=flat&logo=runkit&label=runkit&message=notebook&color=491757">
     </a>
   </p>
 </div>
