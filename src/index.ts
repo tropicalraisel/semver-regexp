@@ -17,7 +17,7 @@ export default function isValidVersion(package_version: string): boolean {
 
   if (!version || version.length <= 0) return false;
 
-  if (version[0].match(/^~|\^|v$/)) version = version.slice(1);
+  if (version[0].match(/~|\^|v$/)) version = version.slice(1);
 
   return isValidSemanticVersion(version);
 }
